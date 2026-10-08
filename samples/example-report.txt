@@ -1,0 +1,10 @@
+SECURECONFIG example findings
+
+Windows:
+- Firewall profiles should be enabled.
+- Microsoft Defender real-time protection should remain enabled.
+- UAC should remain enabled.
+
+Linux:
+- SSH root login should be disabled.
+- A host firewall should be configured.
