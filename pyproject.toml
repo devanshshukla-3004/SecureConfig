@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secureconfig"
+version = "0.1.0"
+description = "Offline-first security configuration auditor for Windows and Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Devansh Shukla"}]
+dependencies = []
+
+[project.scripts]
+secureconfig = "secureconfig.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
